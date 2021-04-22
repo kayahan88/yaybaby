@@ -1,0 +1,403 @@
+#home {
+    /* width: 100vw; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-image: url('https://media.istockphoto.com/photos/blurred-home-interior-background-with-couch-picture-id1161472693?k=6&m=1161472693&s=612x612&w=0&h=7HkvWdR81aqkoJOs9-ajSo26CwIvBAWH8mW3rPpxwcs=');
+    background-repeat:repeat;
+    background-size: cover;
+    /* background-color: white; */
+    padding-top: 3vh;
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 8vh;
+    /* border: 1px solid blue; */
+    align-items: center;
+    padding-top: 1%;
+}
+.user-profile-pic-nav-home{
+    height: 7vh;
+    width: 4vw;
+    border-radius: 50%;
+    border: 1px solid rgb(109, 104, 104);
+    box-shadow: 3px 3px 10px 2px #838181;
+}
+
+.home-header {
+    display: flex;
+    width: 40vw;
+    height: auto;
+    /* border: 1px solid green; */
+    padding: 0px;
+    color: rgb(219, 100, 87);
+    justify-content: center;
+    align-items: center;
+}
+
+.yaybaby {
+    font-size: 30px;
+    color: rgb(219, 100, 87);
+}
+
+.home-header > p {
+    font-size: 25px;
+    /* margin-left: 1vw; */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.post {
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    top: 6vh;
+}
+
+#mapped-post {
+    position: relative;
+    width: 70vw;
+    height: auto;
+    display: inline-block;
+    /* left: 15vw; */
+    /* justify-content: center; */
+    /* border: 1px solid rgb(219, 211, 211); */
+    /* margin: 3vh; */
+    /* background-color: white; */
+    
+}
+
+#mapped-post-top-home {
+    /* box-shadow: 5px 5px 15px 5px #B5B5B5; */
+    box-shadow: 5px 5px 15px 5px #838181;
+    background-color: white;
+    width: 70vw;
+    position: relative;
+    /* left: 15vw; */
+}
+
+#mapped-post-top-home > .user-profile-pic {
+    height: 2.8vh;
+    width: 2.8vh;
+    border-radius: 50%;
+}
+
+.default-profile-pic {
+    height: 4.5vh;
+    width: 4.5vh;
+    border-radius: 50%;
+    border: 1px solid rgb(109, 104, 104);
+    /* background-color: orange; */
+    margin-left: 1vw;
+    /* background-image: url('https://t4.ftcdn.net/jpg/04/10/43/77/360_F_410437733_hdq4Q3QOH9uwh0mcqAhRFzOKfrCR24Ta.jpg'); */
+}
+
+#mapped-post-top-home > .top-home {
+    width: 60.5vw;
+    height: 5vh;
+    display: flex;
+    /* margin-top: 0px; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    /* border: 1px solid yellow; */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* margin-left: 2%; */
+}
+
+.top-home > .name {
+    font-size: 140%;
+    color:black;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.send-friend-request {
+    background-color: blue;
+    width: 10%;
+    height: 5%;
+}
+
+.send-friend-request:hover{
+    cursor: pointer;
+}
+
+#spacer-top {
+    width: 35%;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.is-private {
+    width: 5%;
+    margin-right: 2%;
+}
+
+/* #mapped-post > .post-title {
+    width: 100%;
+    position: relative;
+    font-size: 25px;
+    font-family: Lucida;
+    text-align: left;
+    left: 5vw;
+    border: 1px solid purple;
+} */
+
+#caption-container > .post-title-home {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    border: 1vw solid white;
+    /* box-shadow: 5px 5px 15px 5px #B5B5B5; */
+    box-shadow: 5px 5px 15px 5px #838181;
+    position: relative;
+    /* left: 10vw; */
+    /* padding: .5%; */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    margin-bottom: 1vh;
+}
+
+.milestone {
+    font-weight: bold;
+}
+
+#caption-container > .post-body {
+    height: 100%;
+    width: 42%;
+    background-color: white;
+    border: 1vw solid white;
+    /* outline: 1px solid black; */
+    box-shadow: 5px 5px 15px 5px #838181;
+    position: relative;
+    /* top: 74vh; */
+    /* left: 40vw; */
+    /* bottom: 2vh; */
+    padding: .5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caption-container {
+    display: block;
+    /* border: 2px solid red; */
+    text-align: center;
+    
+    /* justify-content: block; */
+}
+
+.special-details {
+    font-weight: bold;
+}
+
+.post-img {
+    width: auto;
+    height: 70vh;
+    padding: 1.5vh;
+    padding-top: 0px;
+    background-color: white;
+}
+
+.buttons-home{
+    /* border: 1px solid blue; */
+    height: 60px;
+    width: 200px;
+}
+
+.edit-button-home {
+    height: 100%;
+    width: auto;
+}
+
+.edit-button-home:hover {
+    cursor: pointer;
+}
+
+.delete-button {
+    height: 100%;
+    width: auto;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.edit-a-post{
+    background-color: rgb(207, 228, 221);
+    border: 6px solid white;
+}
+
+
+.spacer {
+    width: auto;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.cancel-home {
+    height: 7%;
+    width: 15%;
+    border: 1px solid rgb(52, 121, 86);
+    position: absolute;
+    left: 82%;
+    /* top: 14%; */
+    bottom: 86%;
+    font-size: 120%;
+    font-weight: bold;
+    /* letter-spacing: .2em; */
+    background-color: rgb(76, 167, 121);
+    color: white;
+}
+
+#publish-button-home {
+    height: 9%;
+    width: 15%;
+    border: 1px solid rgb(52, 121, 86);
+    position: relative;
+    left: 29%;
+    top: 8%;
+    font-size: 120%;
+    font-weight: bold;
+    /* letter-spacing: .2em; */
+    background-color: rgb(76, 167, 121);
+    color: white;
+}
+
+@media (min-width: 350px){
+    .user-profile-pic-nav-home{
+        height: 50px;
+        width: 50px;
+    }
+    #mapped-post > #mapped-post-top-home {
+        width: 90vw;
+        position: relative;
+        height: auto;
+        /* border: 2px solid red; */
+    }
+    #mapped-post-top-home > .post-img{
+        position: relative;
+        width: 80vw;
+        height: auto;
+    }
+    #mapped-post-top-home > .top-home > .name{
+        font-size: 100%;
+        width: 30%;
+    }
+    #spacer-top{
+        width: 1px;
+    }
+    .is-private{
+        font-size: 70%;
+    }
+    .buttons-home{
+        /* border: 1px solid red; */
+        height: 35px;
+        width: 100px;
+    }
+    .edit-button-home{
+        height: 35px;
+    }
+    .delete-button{
+        height: 35px;
+        margin-left: 10px;
+    }
+    #caption-container > .post-title-home{
+        font-size: 100%;
+    }
+    .post-title-home > .milestone{
+        font-size: 100%;
+    }
+    #edit-post > .edit-a-post{
+        width: 70vw;
+        position: absolute;
+        left: 15vw;
+    }
+    .create-post-title{
+        font-size: 110%;
+        
+    }
+    .new-entry-title{
+        font-size: 100%;
+        color: white;
+        text-shadow: black;
+    }
+    .edit-a-post > .my-posts-new-entry-2{
+        width: 200px;
+        height: 100px;
+        top: 10px;
+    }
+    .my-posts-new-entry > .new-entry-detail{
+        display: none;
+    }
+    .my-posts-new-entry-2 > .new-entry-title{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .my-posts-new-entry-2 > .new-entry-detail{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .edit-a-post > .my-posts-new-entry > input {
+        font-size: 100%;
+        word-wrap: normal;
+        height: 50px;
+        overflow: auto;
+    }
+    .cancel-home{
+        font-size: 100%;
+        width: 70px;
+        left: 74%;
+        bottom: 92%;
+    }
+    #publish-button-home{
+        font-size: 100%;
+        left: 37%;
+        bottom: 2%;
+        /* top: 17%; */
+        width: 80px;
+    }
+}
+@media (min-width: 760px){
+    #home > #mapped-post{
+        margin: 0px;
+        margin-top: 3%;
+    }
+    #mapped-post > #mapped-post-top-home {
+        width: 60%;
+        position: relative;
+        height: auto;
+        left: 20%;
+        /* border: 2px solid red; */
+    }
+    #mapped-post-top-home > .top-home{
+        width: 100%;
+    }
+    #mapped-post-top-home > .post-img{
+        position: relative;
+        width: 90%;
+        height: auto;
+    }
+    #caption-container > .post-title-home{
+        width: 60%;
+        right: 4%;
+    }
+}
+

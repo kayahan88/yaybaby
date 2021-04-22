@@ -1,0 +1,361 @@
+.auth {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('https://media.istockphoto.com/photos/baby-girl-bathes-in-a-bath-with-foam-and-soap-bubbles-picture-id1141213432?k=6&m=1141213432&s=612x612&w=0&h=iAOLqLT0FnvH4T-fIwLp2VXlxzUOt8DMzwP3ATNqTAg='); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: white; */
+    /* display: flex; */
+    box-sizing: border-box;
+}
+
+.stack {
+    position: absolute;
+    height: 70vh;
+    width: 50vw;
+    display: relative;
+    /* border: 1px solid green; */
+}
+
+.background-image {
+    position: absolute;
+    display: relative;
+    left: 14vw;
+    top: 10vh;
+    height: 70vh;
+    z-index: -1;
+    transform: scaleX(-1) rotate(8deg);
+    /* padding: 1.2%; */
+    border: 2vw solid white;
+    /* outline: 1px solid black; */
+    box-shadow: 5px 5px 15px 5px #B5B5B5;
+}
+
+.layer {
+    position: absolute;
+    display: relative;
+    left: 12vw;
+    top: 10vh;
+    height: 100%;
+    width: 40vw;
+    z-index: -2;
+    padding: 1.2%;
+    border: 2vw solid white;
+    /* outline: 1px solid black; */
+    box-shadow: 5px 5px 15px 5px #B5B5B5;
+    transform: scaleX(-1) rotate(-3deg);
+    background-image: url('https://wallpaperaccess.com/full/1411315.jpg');
+}
+
+.layer2 {
+    position: absolute;
+    display: relative;
+    left: 12vw;
+    top: 10vh;
+    height: 100%;
+    width: 40vw;
+    z-index: -3;
+    padding: 1.2%;
+    border: 2vw solid white;
+    /* outline: 1px solid black; */
+    transform: scaleX(-1) rotate(1deg);
+    background-color: blanchedalmond;
+    box-shadow: 5px 5px 15px 5px #B5B5B5;
+}
+
+.stack > .caption-tag {
+    height: 2%;
+    width: 40%;
+    background-color: white;
+    border: 1vw solid white;
+    /* outline: 1px solid black; */
+    box-shadow: 5px 5px 15px 5px #B5B5B5;
+    position: relative;
+    top: 74vh;
+    left: 30vw;
+    padding: .5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-2deg);
+    /* z-index: 3; */
+}
+
+.caption-tag > .caption-gif {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 110%;
+    
+    /* padding: 1%; */
+    /* background-color: red; */
+    /* background-image: url('blob:https://loading.io/1bad76e4-c168-41d2-8dcd-0bb159c9f271'); */
+    /* z-index: 3; */
+}
+
+
+.header {
+    /* height: 10vh; */
+    /* width: 100vw; */
+    padding-top: 4%;
+    font-size: 500%;
+    color: rgb(219, 100, 87);
+    /* margin-left: 20%; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.auth-header {
+    /* border: 1px solid black; */
+    width: 30vw;
+    position: relative;
+    margin-bottom: 4%;
+    left: 58vw;
+    display: block;
+}
+
+.auth-header > p {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    position: relative;
+    font-size: 130%;
+    font-style: italic;
+}
+
+.text {
+    width: 30vw;
+    height: 25vh;
+    position: relative;
+    text-align: right;
+    left: 63vw;
+    top: 2vh;
+    font-size: 180%;
+    line-height: 170%;
+    margin-top: 0px;
+}
+
+.yaybaby-p {
+    color: rgb(219, 100, 87);
+    font-weight: bold;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    height: auto;
+    width: 22vw;
+    background-color: rgb(207, 228, 221);
+    z-index: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 2%;
+    left: 25vw;
+    border: 1vh solid white;
+    /* outline: 1px solid black; */
+    box-shadow: 5px 5px 15px 5px #B5B5B5;
+}
+
+button {
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    /* border: 1px solid rgb(245, 153, 130); */
+    outline: black;
+    border-radius: 5%;
+    margin-bottom: 2%;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: rgb(241, 237, 237);
+    cursor: pointer;
+}
+
+.signup-box {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+
+.signup-button-hide {
+    display: none;
+}
+
+.signup-button-2 {
+    margin-top: 10%;
+    height: 5vh;
+    width: 50%;
+    background-color: white;
+    border: 1px solid rgb(190, 164, 164);
+    outline: black;
+    border-radius: 5%;
+    margin-top: 2%;
+    /* margin-bottom: 2%; */
+    z-index: 2;
+}
+
+.login-box {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.login-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+
+.login-button-2 {
+    height: 5vh;
+    width: 50%;
+    background-color: white;
+    /* border: 1px solid rgb(190, 164, 164); */
+    outline: black;
+    border-radius: 5%;
+    margin-top: 2%;
+    /* margin-bottom: 2%; */
+    z-index: 2;
+}
+
+.login-button-hide {
+    display: none;
+}
+
+.data-entry {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid blue;  */
+}
+
+
+.data-entry input {
+    width: 65%;
+    margin-top: 1%;
+}
+
+@media (max-width: 768px){
+    .auth-header{
+        position: relative;
+        /* display: flex; */
+        /* justify-content: center; */
+        left: 20%;
+    }
+    .auth-header > p {
+        margin: 0px;
+        font-size: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        left: 50px;
+        top: 70px;
+        width: 300px;
+        height: 30px;
+        /* border: 1px solid blue; */
+        /* padding: 40%; */
+        text-align: left;
+    }
+    .header{
+        font-size: 300%;
+        position: absolute;
+        left: 0px;
+        text-align: center;
+    }
+    .box {
+        width: 250px;
+        height: auto;
+        position: relative;
+        left: 0px;
+        top: 8vh;
+    }
+    .box p{
+        margin-top: 5px;
+    }
+    .stack{
+        position: absolute;
+        height: 70vh;
+        width: 50vw;
+        top: 10vh;
+    }
+    .background-image{
+        position: absolute;
+        top: 53vh;
+        height: 30vh;
+    }
+    .layer{
+        height: 30vh;
+        width: 70vw;
+        top: 53vh;
+    }
+    .layer2{
+        height: 30vh;
+        width: 70vw;
+        top: 53vh;
+    }
+    .text{
+        width: 80vw;
+        height: 20vh;
+        /* border: 1px solid blue; */
+        font-size: 110%;
+        line-height: 140%;
+        position: absolute;
+        left: 45px;
+        top: 340px;
+        text-align: center;
+    }
+    button{
+        height: 35px;
+        margin-bottom: 0px;
+        border: 1px solid rgb(190, 164, 164);
+    }
+    .signup-box{
+        align-items: center;
+    }
+
+    .data-entry > p{
+        /* border: 1px solid pink; */
+        width: 60px;
+    }
+    .stack > .caption-tag{
+        position: relative;
+        height: 32px;
+        width: 200px;
+        top: 630px;
+        padding: 6px;
+    }
+    .caption-tag > .caption-gif{
+        font-size: 90%;
+        position: relative;
+        
+    }
+}
+

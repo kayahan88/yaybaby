@@ -1,0 +1,29 @@
+{createPostView === 'show'
+        ?
+        <div className='create-a-post'>
+            <button className='cancel' onClick={cancel}>Cancel</button>
+            <p className='create-post-title'>Add A New Milestone</p>
+            <div className='my-posts-new-entry'>
+                <p className='new-entry-title'>Milestone:</p>
+                <p className='new-entry-detail'>Choose one of ours, or create your own!</p>
+                <input onChange={e => setTitle(e.target.value)}/>
+            </div>
+            <div className='my-posts-new-entry'>
+                <p className='new-entry-title'>Details:</p>
+                <p className='new-entry-detail'>Include any details you want to remember</p>
+                <input className='big-input' onChange={e => setBody(e.target.value)}/>
+            </div>
+            <div className='my-posts-new-entry'>
+                <p className='new-entry-title'>Enter an image URL:</p>
+                <input onChange={e => setImage(e.target.value)}/>
+            </div>
+            <div className='my-posts-new-entry-2'>
+                <p className='new-entry-title'>Public:</p>
+                <p className='new-entry-detail'>Check this box to make your <br></br>post available publicly.</p>
+                <input className='checkbox' type='checkbox' onClick={togglePrivacy}/>
+            </div>
+
+            <button id='publish-button'onClick={createPost}>Save</button>
+        </div>
+        : null
+    }
