@@ -83,6 +83,7 @@ const MyPosts = (props) => {
         .then(res => {
             console.log('image=', image)
             setPosts(res.data)
+            toggleCreatePostView()
         })
     }
 
