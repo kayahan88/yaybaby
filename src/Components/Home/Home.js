@@ -172,7 +172,7 @@ return (
                 <h1 className='yaybaby'>YayBaby</h1>
                 <p className='page-title'>Home</p>
             </header>
-            <div className='link'>Explore</div>
+            <div className='link'></div>
         </nav>
         {/* <div className='post'> */}
             {/* {newPostView === 'show' ?

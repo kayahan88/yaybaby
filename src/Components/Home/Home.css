@@ -1,6 +1,6 @@
 #home {
     /* width: 100vw; */
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -138,7 +138,7 @@ nav {
 }
 
 #spacer-top {
-    width: 35%;
+    width: 100px;
     height: 100%;
     /* background-color: pink; */
 }
@@ -281,10 +281,17 @@ nav {
     color: white;
 }
 
-@media (min-width: 350px){
+@media (min-width: 100px){
     .user-profile-pic-nav-home{
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
+    }
+    .user-profile-pic-nav-home:hover{
+        box-shadow: 5px 5px 15px 5px #838181;
+    }
+    .home-header > .yaybaby {
+        font-size: 35px;
+        color: rgb(219, 100, 87);
     }
     #mapped-post > #mapped-post-top-home {
         width: 90vw;
@@ -297,20 +304,40 @@ nav {
         width: 80vw;
         height: auto;
     }
+    #mapped-post-top-home > .top-home {
+        width: 90vw;
+        height: 5vh;
+        display: flex;
+        /* margin-top: 0px; */
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        /* border: 1px solid yellow; */
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        /* margin-left: 2%; */
+    }
     #mapped-post-top-home > .top-home > .name{
         font-size: 100%;
         width: 30%;
+        /* margin-left: -150px; */
+        /* border: 1px solid red; */
     }
     #spacer-top{
-        width: 1px;
+        width: 33%;
+        /* background-color: pink; */
     }
     .is-private{
         font-size: 70%;
+        /* border: 1px solid green; */
+        width: 40px;
+        position: relative;
+        left: -15px;
     }
     .buttons-home{
         /* border: 1px solid red; */
         height: 35px;
-        width: 100px;
+        width: 140px;
     }
     .edit-button-home{
         height: 35px;
@@ -376,6 +403,10 @@ nav {
     }
 }
 @media (min-width: 760px){
+    .home-header > .yaybaby {
+        font-size: 50px;
+        color: rgb(219, 100, 87);
+    }
     #home > #mapped-post{
         margin: 0px;
         margin-top: 3%;
@@ -383,7 +414,7 @@ nav {
     #mapped-post > #mapped-post-top-home {
         width: 60%;
         position: relative;
-        height: auto;
+        height: 650px;
         left: 20%;
         /* border: 2px solid red; */
     }
@@ -392,12 +423,13 @@ nav {
     }
     #mapped-post-top-home > .post-img{
         position: relative;
-        width: 90%;
-        height: auto;
+        width: auto;
+        height: 86%;
     }
     #caption-container > .post-title-home{
-        width: 60%;
-        right: 4%;
+        width: 50%;
+        /* right: 4%; */
+        /* border: 2px solid red; */
     }
 }
 

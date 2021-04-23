@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
+import {Link} from 'react-router-dom';
 import './EditMyProfile.css'
 
 const EditMyProfile = () => {
@@ -20,8 +21,14 @@ const EditMyProfile = () => {
 
     return(
         <div className='home'>
-             <header className='home-header' className='centered'>
-                 
+             <header className='home-header-edit' className='centered'>
+             <Link to='/myposts'>
+                 <button className='go-back-my-posts'>Back</button>
+                {/* {user.profile_pic ?
+                    <img className='user-profile-pic-nav-edit' src={user.profile_pic} alt='profile-pic'/>
+                    :
+                    <img src='https://t4.ftcdn.net/jpg/04/10/43/77/360_F_410437733_hdq4Q3QOH9uwh0mcqAhRFzOKfrCR24Ta.jpg' className='default-profile-pic'/>} */}
+            </Link>
                 <h1 className='yaybaby' >YayBaby</h1>
                 {/* <div className='spacer'></div> */}
                 <h2 className='page-title'>Edit My Profile</h2>
@@ -43,11 +50,11 @@ const EditMyProfile = () => {
                         <input defaultValue={user.profile_pic} onChange={e => setProfilePic(e.target.value)}/>
                     </div>
                 </section>
-                <br></br>
-                <button onClick={updateProfile}>Save Changes</button>
+                <br className='break'></br>
+                <button className='save-changes' onClick={updateProfile}>Save Changes</button>
                 <br></br>
                 <button>Delete My Account</button>
-                <p>Note: this is permanent and cannot be undone</p>
+                <p className='note'>Note: this is permanent and cannot be undone</p>
             </div>
         </div>
     )

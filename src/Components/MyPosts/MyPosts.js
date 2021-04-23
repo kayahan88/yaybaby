@@ -5,12 +5,12 @@ import {Link, Redirect} from 'react-router-dom';
 import axios from 'axios';
 import './MyPosts.css';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [image, setImage] = useState('');
-    const [isPrivate, setIsPrivate] = useState(true);
+    const [isPrivate, setIsPrivate] = useState('true');
     const [posts, setPosts] = useState([]);
 
     const [editPostView, setEditPostView] = useState('hide');
@@ -46,8 +46,10 @@ const MyPosts = () => {
         
         if(editPostView === 'hide'){
             setEditPostView('show')
+            
         } else {
             setEditPostView('hide')
+            
         }
     };
 
@@ -117,6 +119,14 @@ const MyPosts = () => {
         })
     };
 
+    function logoutUser(){
+        axios.post('/api/auth/logout')
+        .then(res => {
+            console.log('loggin out')
+            props.history.push('/')
+        })
+    }
+
     return (
         <div id='my-posts-home'>
             {/* <img id='background-image-myposts' src='https://media.istockphoto.com/photos/blurred-home-interior-background-with-couch-picture-id1161472693?k=6&m=1161472693&s=612x612&w=0&h=7HkvWdR81aqkoJOs9-ajSo26CwIvBAWH8mW3rPpxwcs='/> */}
@@ -153,6 +163,7 @@ const MyPosts = () => {
             <nav id='my-posts-nav'>
                 <div className='profile-box'>
                     <div className='profile-box-links'>
+                        
                         <Link to='/editmyprofile'>
                             {user.profile_pic ?
                             <img className='user-profile-pic' src={user.profile_pic} alt='profile-pic'/>
@@ -165,6 +176,7 @@ const MyPosts = () => {
                             </div>
                         </Link>
                     </div>
+                    <p id='current-user'>{user.first_name} {user.last_name}</p>
                     <p className='user-name'>{user.first_name} {user.last_name}</p>
                 </div>
             <header className='home-header'>
@@ -172,9 +184,33 @@ const MyPosts = () => {
                 {/* <div className='spacer'></div> */}
                 <h2 className='page-title'>My Posts</h2>
             </header>
-            <div className='link' className='explore'>Explore</div>
+            <div className='link' className='explore'>
+                <div className='order-container-2'>
+                    
+                    
+                    <br></br>
+                    <Link to='/home'>
+                    <span className='milestone-album'>Milestone Album</span>
+                    <span className='go-back-home'>Home</span>
+                        <img className='album-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgm8mpm6yjWzKu2NbFTlbDhrTWjaYsb7K80g&usqp=CAU'/>
+                    </Link>
+                    
+                </div>
+                <div className='logout' onClick={() => logoutUser()}>Log Out</div>
+            </div>
         </nav>
         
+            <div className='order-container-og'>
+                <p>Want to save these forever?</p>
+                <p>Click below to order a 
+                <br></br>
+                <span className='milestone-album-og'>Milestone Album</span>
+                <br></br> 
+                of all your memories and milestones</p>              
+                <Link to='/milestonealbum'>
+                    <img className='album-img-og' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgm8mpm6yjWzKu2NbFTlbDhrTWjaYsb7K80g&usqp=CAU'/>
+                </Link>
+            </div>
             <div className='order-container'>
                 <p>Want to save these forever?</p>
                 <p>Click below to order a 
@@ -186,14 +222,14 @@ const MyPosts = () => {
                     <img className='album-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgm8mpm6yjWzKu2NbFTlbDhrTWjaYsb7K80g&usqp=CAU'/>
                 </Link>
             </div>
-            <div className='order-container-2'>
+            {/* <div className='order-container-2'>
                 
                 <span className='milestone-album'>Milestone Album</span>
                 <br></br>
                 <Link to='/milestonealbum'>
                     <img className='album-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgm8mpm6yjWzKu2NbFTlbDhrTWjaYsb7K80g&usqp=CAU'/>
                 </Link>
-            </div>
+            </div> */}
 
         {createPostView === 'hide'
         ?
@@ -212,7 +248,7 @@ const MyPosts = () => {
             <p className='create-post-title'>Add A New Milestone</p>
             <div className='my-posts-new-entry'>
                 <p className='new-entry-title'>Milestone:</p>
-                <p className='new-entry-detail'>Choose one of ours, or create your own!</p>
+                <p className='new-entry-detail'></p>
                 <input onChange={e => setTitle(e.target.value)}/>
             </div>
             <div className='my-posts-new-entry'>

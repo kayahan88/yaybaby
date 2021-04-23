@@ -1,6 +1,6 @@
 .home {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
     display: inline-block;
     /* justify-content: center; */
@@ -13,6 +13,13 @@
     
 }
 
+.home-header-edit{
+    width: 100%;
+    height: 8vh;
+    border: 1px solid red;
+    position: absolute;
+}
+
 .centered {
     text-align: center;
     width: 40%;
@@ -20,10 +27,19 @@
     left: 30%;
 }
 
+.user-profile-pic-nav-edit{
+    height: 7vh;
+    width: 4vw;
+    border-radius: 50%;
+    border: 1px solid rgb(109, 104, 104);
+    box-shadow: 3px 3px 10px 2px #838181;
+}
+
 .edit-profile-container {
     width: 70vw;
     height: 90vh;
-    background-color: white;
+    background-color: rgb(207, 228, 221);
+    border: 6px solid white;
     box-shadow: 5px 5px 15px 5px #3d3c3c;
     position: relative;
     left: 15vw;
@@ -31,19 +47,106 @@
 }
 
 .edit-profile-container > button {
-    width: 20%;
+    width: 30%;
     height: 10%;
+    border: 1px solid rgb(52, 121, 86);
+    background-color: rgb(76, 167, 121);
+    color: white;
 }
+.edit-profile-container > button:hover{
+    box-shadow: 5px 5px 15px 5px #3d3c3c;
+}
+
 
 .new-entry-container {
     padding: 10%;
 }
 
+.new-entry > p{
+    width: 50px;
+}
+
 .new-entry > input {
     width: 60%;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .new-entry {
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 100px){
+    .user-profile-pic-nav-edit{
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 170px;
+    }
+    .edit-profile-container {
+        width: 70vw;
+        height: 60vh;
+        background-color: rgb(207, 228, 221);
+        border: 6px solid white;
+        box-shadow: 5px 5px 15px 5px #3d3c3c;
+        position: relative;
+        left: 15vw;
+        /* display: flex; */
+    }
+    .new-entry-container {
+        padding-bottom: 0%;
+    }
+    .save-changes{
+        margin-bottom: 40px;
+
+    }
+}
+
+@media (min-width: 1247px){
+    .go-back-my-posts{
+        position: absolute;
+        top: 130px;
+        right: 900px;
+        width: 80px;
+        border: 1px solid rgb(52, 121, 86);
+        background-color: rgb(76, 167, 121);
+        color: white;
+    }
+    .go-back-my-posts:hover{
+        box-shadow: 5px 5px 15px 5px #3d3c3c;
+        background-color: rgb(76, 167, 121);
+    }
+    .user-profile-pic-nav-edit{
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 770px;
+    }
+    .user-profile-pic-nav-edit:hover{
+        box-shadow: 5px 5px 15px 5px #3d3c3c;
+    }
+    .edit-profile-container {
+        width: 70vw;
+        height: 80vh;
+        background-color: rgb(207, 228, 221);
+        border: 6px solid white;
+        box-shadow: 5px 5px 15px 5px #3d3c3c;
+        position: relative;
+        left: 15vw;
+        /* display: flex; */
+    }
+
+    .edit-profile-container > button{
+        width: 7vw;
+        height: 4vh;
+        position: relative;
+    }
+    .new-entry > p{
+        width: 100px;
+    }
+    .note{
+        position: relative;
+        bottom: 28px;
+    }
 }
