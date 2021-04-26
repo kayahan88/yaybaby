@@ -1,7 +1,5 @@
 module.exports = {
-    getAllPosts: (req, res) => {
-
-    },
+    
     getHomePosts: async (req, res) => {
         const db = await req.app.get('db')
         db.posts.get_home_posts()
@@ -15,9 +13,6 @@ module.exports = {
         const db = await req.app.get('db')
         db.posts.get_my_posts(id)
         .then(posts => res.status(200).send(posts))
-    },
-    getExplorePosts: (req, res) => {
-
     },
     createHomePost: async (req, res) => {
         const {id, title, body, img, isPrivate} = req.body;
